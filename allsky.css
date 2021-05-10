@@ -1,0 +1,365 @@
+html,body {
+	height: 100%;
+}
+body {
+	color:white;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	background-image: url(./space-planet-galaxy.jpg);
+	background-size: cover;
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	padding-top: 1.5rem;
+}
+
+/* ---------------- Title ---------------- */
+.header h1 {
+	float: left;
+	color: #DDD;
+	font-size: 1.5rem;
+    padding-left: 4rem;
+	background: url('allsky-logo.png') left center;
+	background-size: 57px;
+    background-repeat: no-repeat;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+	height: 35px;
+}
+/* ---------------- Info Card ---------------- */
+.info {
+	margin: auto; 
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	padding: 8px;
+	position: fixed;
+	right: 0px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: #333;
+    border: 2px solid #888;
+	border-right: none;
+}
+
+.info ul {
+	list-style: none;
+	padding-left: 10px;
+    margin-bottom: 0;
+}
+
+.info ul li i {
+	margin-right: 3px;
+}
+
+.notification {
+	margin-left: 10px;
+}
+/* ---------------- Live Container ---------------- */
+#imageContainer {
+	text-align: center;
+}
+ 
+img.current {
+	 width: 100%; 
+}
+/* ---------------- Overlay StarMap-Constellations ---------------- */
+#starmap_container {
+	position: absolute;
+	opacity: 0.45;
+	overflow: hidden;
+	height: 720px;
+}
+
+.starmap_credit {
+	display: none !important;
+}
+/* ---------------- Water Mark ---------------- */
+.diy {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	flex-direction: column;
+}
+
+.diy a {
+	color: white;
+}
+/* ---------------- Back Button in the other Pages ---------------- */
+.back-button {
+	text-decoration: none;
+	margin: 5px;
+	padding: 5px 10px;
+	color: white;
+	background-color: #5D5D5D;
+	border-radius: 5px;
+	display: inline-block;
+	position: fixed;
+	top: 1rem;
+}
+
+.back-button i {
+	margin-right: 5px;
+}
+/* ---------------- Videos Page ---------------- */
+.archived-videos .day-container{
+	width: 10%;
+	min-width: 100px;
+	float: left;
+	padding: 10px;
+}
+
+.archived-videos .day-container .image-container {
+	height: 90px;
+}
+
+.archived-videos .day-container .image-container img{
+	width: 100%;
+	max-height: 100%;
+}
+
+/* ---------------- API Weather ---------------- */
+.ww-informers-box-854753 .wwrun {
+	width: 100% !important;
+}
+
+.ww-informers-box-854754 {
+	-webkit-animation-name: ww-informers54;
+	animation-name: ww-informers54;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	font-size: 12px;
+	font-family: Arial;
+	line-height: 18px;
+	text-align: center;
+	width: 100%;
+}
+
+@-webkit-keyframes ww-informers54 {
+
+	0%,
+	80% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 1
+	}
+}
+
+@keyframes ww-informers54 {
+
+	0%,
+	80% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 1
+	}
+}
+/* ---------------- Menu Buttons Position ---------------- */
+.menu {
+	position: absolute;
+	left: -33px;
+	margin: auto; 
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+/* ---------------- Menu Buttons ---------------- */
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+
+:after {
+	content: "";
+}
+
+section {
+  position: relative;
+  left: 100px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+nav {
+  float: left;
+	position: relative;
+	top: 0;
+  left: 0;
+	background: transparent;
+}
+
+nav ul {
+	text-align: center;
+}
+
+nav ul li {
+	position: relative;
+  width: 70px;
+  cursor: pointer;
+	background: #0471a6;
+	text-transform: uppercase;
+	transition:all .4s ease-out;
+}
+
+nav ul li:after {
+	position: absolute;
+	background:#3685b5;
+	color: white;
+	top:0;
+	left: 70px;
+	width: 70px; height: 100%;
+  opacity:.5;
+  transform: perspective(400px) rotateY(90deg);
+	transform-origin: 0 100%;
+	transition:all .4s ease-out;
+}
+/* ---------------- Name in Buttom Transition ---------------- */
+.skymap:after { 
+	content: "SkyMap";
+	font-size: 0.7em;
+	line-height: 88px;
+	position: absolute;
+}
+.video:after { 
+	content: "Videos";
+	font-size: 0.7em;
+	line-height: 88px;
+}
+.startrail:after { 
+	content: "StarTrails";
+	font-size: 0.7em;
+	line-height: 88px;
+}
+.informacao:after { 
+	content: "Info";
+	font-size: 0.7em;
+	line-height: 88px;
+}
+
+nav ul li:hover {
+	transform: translateX(-70px);
+}
+
+nav ul li:hover:after {
+  opacity: 1;
+	transform: perspective(400px) rotateY(0deg) scale(1) ;
+}
+
+
+nav ul li > div {
+	display: inline-block;
+	padding: 25px 0;
+	background: transparent;
+}
+
+nav ul li div { position: relative; }
+
+.lines {
+	position: absolute;
+	top: 36px;
+	left: 5px;
+	width: 11px;
+	box-shadow: 0 0 0 1px crimson;
+}
+
+.lines:after {
+	position: absolute;
+	top: 4px;
+	left: 3px;
+	width: 14px;
+	box-shadow: 0 0 0 1px crimson;
+}
+
+.lines:nth-child(2) {
+	position: absolute;
+	top: 44px;
+	left: 8px;
+	width: 11px;
+}
+
+.lines:nth-child(2):after {
+	position: absolute;
+	top: 4px;
+	left: -3px;
+	width: 11px;
+}
+
+.lines:nth-child(3) {
+	position: absolute;
+	top: 52px;
+	left: 8px;
+	width: 14px;
+}
+
+.lines:nth-child(3):after {
+	display: none;
+}
+.linha {
+	width: 960px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 5px 0;
+}
+
+.coluna {
+	padding: 0 10px;
+	float: left;
+}
+.col1 {
+	width: 60px;
+
+}
+.col2 {
+	width: 140px;
+}
+.col3 {
+	width: 220px;
+}
+.col4 {
+	width: 300px;
+}
+.col5 {
+	width: 380px;
+}
+.col6 {
+	width: 460px;
+
+}
+.col7{
+	width: 540px;
+}
+.col8{
+	width: 620px;
+}
+.col9{
+	width: 700px;
+}
+.col10{
+	width: 780px;
+}
+.col11{
+	width: 860px;
+}
+.col12{
+	width: 940px;
+}
+a.botao, input.botao{
+	background: #1f3c58;
+	padding: 15px 10px;
+	border-radius: 3px;
+	color: #ebebeb;
+	cursor: pointer;
+	margin: 5px 0;
+	display: inline-block;
+	border: none;
+	float: left;
+}
+

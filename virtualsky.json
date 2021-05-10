@@ -1,0 +1,18 @@
+{
+	"id": "starmap",
+	"projection": "fisheye",
+	"width": 1260,
+	"height": 960,
+	"constellations": true,
+	"mouse": false,
+	"gridlines_eq": true,
+	"keyboard": false,
+	"showdate": false,
+	"showposition": true,
+	"constellationlabels": true,
+	"sky_gradient": false,
+	"gradient": false,
+	"transparent": true,
+	"objects": "M42;M45;M31;M51;M81",
+	"lang": "en"
+}
